@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="device-width, initial-scale=1.0"> 
+    <title>Airpods Review</title>
+
+
+    <script>
+
+//Smooth Scrolling
+$('#navbar a, .btn').on('click', function(event) { 
+  if(this.hash !== '') { 
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+    {
+      scrollTop: $(hash).offset().top -80
+    }, 
+    800
+    );
+  }
+});
+    </script>
+
+    <style>
+      * {
+ 
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-seriff;
+  line-height: 1.4;
+  color: #333;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+.text-primary {
+  color: #8B0000;/*#3693ff;*/
+}
+.bg-dark {
+  background: #333; /*#f4f4f4;*/
+  color: #000000;
+}
+.bg-light {
+  background: #333; /*#f4f4f4;*/
+  color: #333;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  color: #000000;
+  padding: 1.5rem 8rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 3px solid #8B0000;/*#3693ff;*/
+}
+#navbar ul { 
+  display: flex; 
+  align-items: center; 
+  list-style: none; 
+}
+  #navbar h2 a{ 
+    color: #000000; 
+    text-decoration: none; 
+}
+  #navbar li a { 
+    text-decoration: none; 
+    color: #000000; 
+    padding: 1rem; 
+    font-size: 1.3rem; 
+    margin: 0 0.5rem; 
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+
+#navbar li a:hover { 
+  background-color: #8B0000;/*#3693ff;*/
+}
+
+#showcase { 
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQjCFdvsiQa8vWEP4tMWI4YqCWVkdBJ0GmAA&usqp=CAU ) no-repeat center center/cover;
+  background-color: #333; 
+  height: 87vh;
+}
+.showcase-content h1 { 
+  display: flex; 
+  flex-direction: column; 
+  text-align: center; 
+  align-items: center; 
+  justify-content: center; 
+  position: absolute; 
+  top: 110px; 
+  left: 0; 
+  bottom: 0; 
+  right: 0; 
+  background: rgba(0,0,0,0.6); 
+  color: #8B0000;
+}
+.showcase-content h1 { 
+  font-size: 4rem; 
+  margin-bottom: 2rem;
+}
+
+.showcase-content .btn { 
+  font-size: 1.5rem; 
+  padding: 1rem 10rem;
+  transition: color 0.3s, background 0.3s;
+}
+
+.showcase-content .btn:hover {
+  background: #8B0000;/*#3693ff;*/
+  color: #fff;
+}
+
+.btn {
+  color: #8B0000;/*#3693ff;*/
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid #8B0000;/*#3693ff;*/
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#about { padding: 5rem 0;}
+
+#about h2, #services h2 { text-align: center; font-size: 3rem; margin-bottom: 3rem;}
+
+#about h3 { font-size: 2rem; margin-bottom: 1rem;}
+
+#about p.lead { margin-bottom: 1rem;}
+
+#about .about-content { display: flex; }
+
+#about .about-text,
+#about .about-image {
+  flex: 1;
+}
+
+#about .about-text { text-align: justify; }
+
+#about .about-image img {
+  display: block;
+  margin-left: auto;
+  width: 75%;
+  border-radius: 0%;
+  margin-top: 20px;
+}
+
+#video {
+    margin-bottom: 5rem;
+    margin-top: 10px;
+    background: #333;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #8B0000;/*#fff;*/
+    position: relative;
+
+}
+
+#video h2 {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+#video p {
+    max-width: 1200px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#video .play-btn {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#video .play-btn i {
+    color: #8B0000;/*#2273f8;*/
+    font-size: 30px;
+}
+
+#video .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 115, 248, 0.5);
+}
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+
+}
+body{
+ font-family: arial;
+
+}
+.main {
+
+ margin: 2%;
+ margin-right: 0%;
+ display: inline-flex;
+ transform: translate(-1.5%,0%);
+
+}
+
+.card{
+     width: 20%;
+     box-shadow: 2px 2px 20px #333;
+     border-radius: 5px; 
+     margin: 2%;
+     color: #000000;
+     background-color: #333;
+    }
+
+.image img{
+  width: 60%;
+  display: flex;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+ }
+
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  color: #8B0000;
+ }
+.font{
+  font-size: 50px; 
+}
+.font1
+{
+  font-size: 60px;
+  color: #333;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+}
+/*button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: grey;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;*/
+}
+
+#services { padding: 5rem 0; background-color: #333; margin-top: 10px; }
+#services h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+#services .boxes { display: flex; }
+#services .box {
+  background: #000000;/*#fff;*/
+  flex: 1;
+  padding: 3rem;
+  margin: 0 3rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #000000;/*#d1d1d1;*/
+  font-size: 1.3rem;
+}
+
+#services .box i {
+  color: #fff;
+  padding: 1rem;
+  background: #8B0000;/*#3693ff;*/
+  border-radius: 30%;
+  margin: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;/*'Josefin Sans', sans-serif;*/
+}
+
+body{
+  background: #000000;/*#eeeeee;*/
+}
+
+.clear-fix{
+  clear: both;
+}
+
+.testimonial{
+  width: 720px;
+  height: auto;
+  margin: 80px auto;
+}
+
+.testimonial .item{
+  width: 220px;
+  margin: 0 10px;
+  float: left;
+  background: #8B0000;/*#6ddfc0;*/
+  border-radius: 25px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.125);
+}
+
+.testimonial .item .img{
+  padding: 20px;
+}
+
+.testimonial .item .img img{
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.testimonial .item .name{
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  /*letter-spacing: 1px;*/
+  color: black;
+  font-weight: bolder;
+}
+
+.testimonial .item .content{
+  background: #000000;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 20px;
+  text-align: center;
+}
+
+.testimonial .item .content h1{
+  margin-bottom: 10px;
+  color: #8B0000;/*#6ddfc0;*/
+}
+
+.testimonial .item .content p{
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.testimonial .item .content .stars img{
+  width: 25px;
+}
+
+footer {
+    background: #1c1c1c;
+    color: #8B0000;/*#fff;*/
+    padding: 70px 0;
+    text-align: center;
+}
+
+footer  {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+footer .social-media {
+    margin: 30px 0;
+}
+
+footer .social-media a {
+    text-decoration: none !important;
+    margin: 0 5px;
+}
+
+footer .social-media i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000000;/*#2273f8;*/
+    font-size: 22px;
+    padding-top: 14px;
+    transition: all .3s ease-in-out;
+}
+
+footer .social-media i:hover {
+    background: #8B0000;/*#2273f8;*/
+    color: #fff;
+}
+
+    </style>
+</head>
+<body id="home">
+
+    <nav id="navbar"> 
+      <h2><a href="#home"><span class="text-primary">Sriya - </span>121810308063</a></h2>
+      <ul>
+        <h2><li><a href="#home">Home</a></li></h2> 
+        <h2><li><a href="#about">Insights</a></li></h2> 
+        <h2><li><a href="#video">Demo</a></li></h2>
+        <h2><li><a href="#Features">Features</a></li></h2>
+        <h2><li><a href="#services">Analysis</a></li></h2> 
+        <h2><li><a href="#Testimonials">Testimonials</a></li></h2> 
+        <!--li><a href="https://www.google.com"><i class="fab fa-facebook-f"></i></a></li-->
+      </ul>
+    </nav>
+    <header id="showcase">
+      <div class="showcase-content">
+        <div class="container">
+          <h1>New Apple AirPods Pro review:<br>Are they any better?<!--br> <span class="text-primary">A touch of Apple magic</span--></h1>
+          <!--a href="#about" class="btn">Read More</a-->
+        </div>
+      </div>
+    </header>
+    <section id="about"> 
+      <div class="container"> 
+        <h2 class="about-heading">My Insights About <span class="text-primary">Apple Airpods Pro</span></h2> 
+        <div class="about-content">
+          <div class="about-text">
+         
+        <p class="lead">This is the first real review of the AirPods I wholeheartedly agree with.</p> 
+        <p class="lead">I have both the first and second generation AirPods because they are so deeply integrated in my life. I preordered the AirPods Pro and will be returning them next week because of pretty much the exact list of reasons you gave.</p> 
+        <p class="lead">My Airpods are my goto when traveling around the city and for multiple work calls a day. I truly believe that as a phone headset, there is nothing that comes close in the wireless domain. I've learned to accept the audio quality for music, but the Airpods (2nd gen), are not going to 'move' you from an audio quality perspective, and I am totally fine with that. I have other headphones (wired and wireless that I use when I want top notch audio quality) Phone/business calls first, music second for this device...but due to sheer convenience they are in my ears more than any other headphones I own by a massive margin.</p>
+        <p class="lead">The AirPods Pro is nowhere near as convenient as the normal AirPods - the case is clunky (I can’t believe no reviewer has mentioned how much harder it is to use compared to the normal case), it takes longer to put them on and remove them, the seals aren’t as comfortable as having no seal on the standard AirPods. All these tiny little things really matter so much when you use the AirPods frequently like I do.</p>
+        <p class="lead">The improved sound quality and the incredible noise cancellation are noted (the transparency mode and the ANC are very impressive), but these aren’t the fundamental reasons why I use AirPods. It’s all about the convenience, and the AirPods Pro sacrifice a lot of convenience for the sake of ANC and sound quality.</p>
+        <p class="lead">I current swap between standard AirPods (used 80% of the time) and Bose QC35 (used 20% of the time when ANC is required). It’s a better combo than the AirPods Pro.</p>
+        <p class="lead">I was hoping these were going to be announced at the iPhone event in September. Announcement hits that Airpods Pro are out earlier this week, and they were an instant preorder for me. They arrived on 10/30. I was so hopeful, these would be 'the ones'.</p>
+        <p class="lead">I feel like most reviewers are failing to realise that the AirPods Pro are a downgrade from AirPods if you judge it based off convenience, which is why most people get AirPods.</p>
+      </div>
+      <div class="about-image">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/41DYtv1JJaL._AC_SL1024_.jpg" alt="Apple Airpods">
+      </div>
+    </div>
+    </div>
+  </section>
+
+<!---video--->
+   <section id="video">
+        <!--div class="overlay"></div-->
+        <h2 class="bg-dark">Product <span class="text-primary">Demo Video</span></h2>
+        <!--p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s.</p-->
+        <!--div class="play-btn">
+            <i class="fas fa-play"></i>
+        </div-->
+        <iframe width="660" height="415" src="https://www.youtube.com/embed/ML78pKEB_5s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!--iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe-->
+    </section>
+
+
+
+<!--cards -->
+<section id="Features" class="title"> 
+  <div class="container">
+    <h2 class="font">Features</h2>
+   <!--div class="title">
+  <h1 class="text-primary">Features</h1-->
+ <div class="main">
+
+      <div class="card">
+
+<div class="image">
+   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEUAAAD////l5eWVlZX6+vqrq6s4ODjBwcHLy8uSkpL29vbi4uJvb2/w8PCzs7OoqKja2tqgoKDS0tJDQ0MaGhp0dHRgYGAjIyO2trYsLCwVFRUmJiZQUFCBgYGIiIhJSUlaWlowMDALCwseHh6Wfn0bAAAEDElEQVR4nO2d6XbiMAxGWQKU0LAV2tLS/f3fcco503NYbDlEn2PhfPf3TNGtSG0nktLrEUIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCDHLfnq3HNwYy8nbuK7f+6B/o6zv6/jdV6nj1DB7CApOUseoZSj7bWapA9QzEQ1v9go85k4QzCCDB+ZewUXq0FD4/qR+pA4MRvXtNlynDgzHyim4Tx0WkNJp+Jw6LCRbl+FN72XOcS2K49RBYXEYblPHhGVzabhKHROWx0vDUeqYsDgWfdmwWC+GphgtCzFgxxFDMpw4cp6cl/elEPL08j/4Dee17w60zaP/qHCFYbVvP/L6TPWG6/ajvoqPUmkonSZt8OpWrGu4bD/iq3nQGJaec5YtnLuxmobOHXpvN27AS0RF1/3B1eUHOgwdf2W280FVFtcj3DvR8+NKYlnNFqcbG4fh+Tq/mcv7CIniK6Kidy0vV+K/Gpz9HN3ePGYSn4TPfRcMT292jLW3GncRFaX92/rvIHVpePII4KP5F/Q/MZMofr2qsc/wRFDr90vEpedT/OBi5zacHf2EnTqDvzzHMwzcghm4DY/XCul7Xp94f06fPLvTP56dhke3q94ggjGvxNAjpc+AYeA3VJt4B82Q4Uw2BKUwZhKDjwUfRUPMVXjgJ5nhRDIE3iuOlsSgYfUtGN7jDKMlMfzweiwYIh+cxkpi2HArGN4BDWMdMcKGq5YMYyUxbDhqyzDSxsaSYZwkWjKMc8QwZRjliGHKMMph35ZhjCvRlmGMNdGWYYwkGjPsv2ZviE+iNcM+/CmGOUN4Es0Zwnen9gzRSbRniE6iQUNwEg0aukrrMjPEJtGiYf8pe0NoEk0aFsjdqUnD/iJ7wwJ4Jdo09PR95GToKqjPzBB3JVo1LGAbG6uGuCSaNYStiWYNYUm0a1iA7tjYNUStiYYNQWuiZUPMlWjZELM7tWyISaJpQ8iaqKvFiD2IAJFEXT0NsibKSSuGUk1U9B5oQBJ1dW3A2kQP+o2NrjYRV1/qQ59EZX0prEbYR6leE5U1wjeQxEZ13vhafT+FssamWa0+vN9CoFJW1jbrt4D3zPhRV9g065lB9z35KdVdCg37nsC9a16W+o1pw941bP+hl8AIuTo07T+E9pB6KEZ6v+Y9pMg+YAdlNZjXmuQY5NUpV6cPGNnLfQmuzLR5L3cH+vHzn6nQgbkY9meb7LWzTazPpxl6ouaMoXNMzona4OZEHbA362sGnfV1gzh2S/nP3Mt/bmL+sy/zn1/agRm0+c8Rzn8WdAfmeec/k70Dc/U78G6E3ksGWZTfb5H/O0p6HXjPTC//dwUdyP19T4QQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIM8A+JUmc0wkJNqgAAAABJRU5ErkJggg==" class="center">
+</div>
+<div class="title">
+ <h1>
+Battery</h1>
+</div>
+<div class="des">
+ <h1><br>4.5 Hours</h1>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR-VLomVtFUNvqFOOlBny3SZseyGuHJxbRh5g&usqp=CAU" class="center">
+</div>
+<div class="title">
+ <h1>Bluetooth</h1>
+</div>
+<div class="des">
+ <h2><br>Bluetooth 5.0</h2>
+</div>
+</div>
+
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="data:image/png;base64,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" class="center">
+</div>
+<div class="title">
+ <h1>
+Color<br></h1>
+</div>
+<div class="des">
+ <h2><br>White &<br>Black</h2>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="data:image/png;base64,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" class="center">
+</div>
+<div class="title">
+ <h1>
+Driver Unit</h1>
+</div>
+<div class="des">
+ <h2>Custom high excursion driver</h2>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="data:image/png;base64,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" class="center">
+</div>
+<div class="title">
+ <h1>
+Music Time</h1>
+</div>
+<div class="des">
+ <h2>Up to 4.5 hours</h2>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="data:image/png;base64,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" class="center">
+</div>
+<div class="title">
+ <h1>
+Charging Time</h1>
+</div>
+<div class="des">
+ <h2>3 hours of charge in 15 minutes</h2>
+</div>
+</div>
+</div>
+</section>
+
+<!--cards -->
+
+
+
+  </section>
+
+<!-- Section: Services -->
+<section id="services" class="bg-light"> 
+  <div class="container"> 
+    <h2 class="bg-dark">Detailed <span class="text-primary">Analysis</span></h2> 
+    <div class="boxes"> 
+      <div class="box"> 
+        <h3><span class="text-primary">Pro's</span></h3> 
+        <div class="feature" > 
+          <i class="fas fa-check"></i> Clear, engaging sound
+        </div> 
+        <div class="feature"> 
+          <i class="fas fa-check"></i> Excellent noise canceling
+        </div> 
+        <div class="feature"> 
+          <i class="fas fa-check"></i> Comfortable
+        </div> 
+        <div class="feature"> 
+          <i class="fas fa-check"></i> Superior call quality
+        </div>
+        <div class="feature"> 
+          <i class="fas fa-check"></i> Wireless charging case
+        </div>
+      </div>
+      <div class="box"> 
+        <h3><span class="text-primary">Con's</span></h3> 
+        <div class="feature"> 
+          <i class="fa fa-times" aria-hidden="true"></i> Questionable battery life 
+        </div> 
+        <div class="feature"> 
+          <i class="fa fa-times" aria-hidden="true"></i> Expensive
+        </div> 
+        <div class="feature"> 
+          <i class="fa fa-times" aria-hidden="true"></i>  No on-ear volume controls
+        </div> 
+        <div class="feature"> 
+          <i class="fa fa-times" aria-hidden="true"></i> ANC isn't adjustable
+        </div>
+        <div class="feature"> 
+          <i class="fa fa-times" aria-hidden="true"></i> Lack of Companion app
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
+
+    
+ 
+    
+
+<section id="Testimonials" class="title">
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<h2  class="font1" >User <span class="text-primary">Reviews</span></h2>
+<div class="wrapper">
+   <div class="testimonial">
+     <div class="item">
+       <div class="img">
+         <img src="https://i.imgur.com/2pGPLrl.png" alt="">
+       </div>
+       <div class="name">Mike Kane</div>
+       <div class="content">
+         <h1><i class="fas fa-quote-left"></i></h1>
+         <p>The improved sound quality and the incredible noise cancellation are noted (the transparency mode and the ANC are very impressive), but these aren’t the fundamental reasons why I use AirPods. It’s all about the convenience, and the AirPods Pro sacrifice a lot of convenience for the sake of ANC and sound quality.</p>
+         <div class="stars">
+           <img src="https://i.imgur.com/wfBhXd3.png" alt="">
+           <img src="https://i.imgur.com/wfBhXd3.png" alt="">
+           <img src="https://i.imgur.com/wfBhXd3.png" alt="">
+           <img src="https://i.imgur.com/wfBhXd3.png" alt="">
+           <img src="https://i.imgur.com/wfBhXd3.png" alt="">
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <div class="img">
+         <img src="https://i.imgur.com/jQj1I8E.png" alt="">
+
+       </div>
+       <div class="name">carlo rossi</div>
+       <div class="content">
+         <h1><i class="fas fa-quote-left"></i></h1>
+         <p>All in all this was a great purchase for me as an upgrade to my other ones that have much shorter battery by probably and hour or so. I will say however that unless you really know you want the new modes then maybe don’t consider purchasing.</p>
+         <div class="stars">
+           <img src="https://i.imgur.com/wfBhXd3.png" alt="">
+           <img src="https://i.imgur.com/wfBhXd3.png" alt="">
+           <img src="https://i.imgur.com/w9ziMzE.png" alt="">
+           <img src="https://i.imgur.com/w9ziMzE.png" alt="">
+           <img src="https://i.imgur.com/w9ziMzE.png" alt="">
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <div class="img">
+         <img src="https://i.imgur.com/2Necikc.png" alt="">
+       </div>
+       <div class="name">Jason Peter</div>
+       <div class="content">
+         <h1><i class="fas fa-quote-left"></i></h1>
+         <p>At first I found it hard to take them out but I think people are so used to the Gen 1 and 2 ones. You just push them out from behind with your finger and then you have a hold of it. Just don’t pinch from the top like you do with Gen 1/2</p>
+         <div class="stars">
+           <img src="https://i.imgur.com/wfBhXd3.png" alt="">
+           <img src="https://i.imgur.com/wfBhXd3.png" alt="">
+           <img src="https://i.imgur.com/wfBhXd3.png" alt="">
+           <img src="https://i.imgur.com/w9ziMzE.png" alt="">
+           <img src="https://i.imgur.com/w9ziMzE.png" alt="">
+         </div>
+       </div>
+     </div>
+     <div class="clear-fix"></div>
+  </div>
+</div>
+</section>
+
+ <footer class="text-center">
+        <div class="cotnainer">
+            <h4>Follow Us</h4>
+            <div class="social-media">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+            </div>
+
+            <h6>Copyright &copy; 2020. All Rights Reserved.<br> Website by Sriya Amperayani</h6>
+        </div>
+    </footer>
+
+
+</body> 
+</html>
